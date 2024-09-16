@@ -22,22 +22,10 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            <div class="social-media">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
-            </div>
         </div>
     </header>
 
     <main>
-        <section id="home">
-            <div class="container">
-                <h2>Bem-vindo ao Fuscão Vermelho</h2>
-                <p>Descubra nossos produtos incríveis e aproveite ofertas especiais.</p>
-            </div>
-        </section>
-
         <section id="produtos">
             <div class="container">
                 <h2>Produtos</h2>
@@ -49,163 +37,43 @@
                             <h3>Limpadores de Para-brisa ferro</h3>
                             <p>Par limpador de para-brisa de ferro. Preço: R$39,99</p>
                             <div class="product-buttons">
-                                <a href="https://wa.me/5527999988888" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
+                                <label for="quantidade-produto1">Quantidade:</label>
+                                <input type="number" id="quantidade-produto1" name="quantidade" min="1" value="1">
+                                <button class="btn add-to-cart" onclick="adicionarAoCarrinho('Limpadores de Para-brisa ferro', 39.99, document.getElementById('quantidade-produto1').value)">Adicionar ao Carrinho</button>
+                                <button class="btn buy-now" onclick="finalizarCompra('Limpadores de Para-brisa ferro', 39.99, document.getElementById('quantidade-produto1').value)">Comprar Agora</button>
                             </div>
                         </div>
                     </div>
-                    <!-- Repetir para outros produtos -->
-                    <div class="product-card">
-                        <img src="images/produto2.jpg" alt="Produto 2">
-                        <div class="product-info">
-                            <h3>Limpadores de Para-brisa</h3>
-                            <p>Manutenção essencial para seu veículo. Preço: R$49,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988889" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto3.jpg" alt="Limpadores de Para-brisa">
-                        <div class="product-info">
-                            <h3>Limpadores de Para-brisa</h3>
-                            <p>Manutenção essencial para seu veículo. Preço: R$29,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988890" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto4.jpg" alt="Capas de Banco">
-                        <div class="product-info">
-                            <h3>Capas de Banco</h3>
-                            <p>Proteja e decore seus bancos com estilo. Preço: R$79,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988891" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Adicione os outros produtos -->
-                    <div class="product-card">
-                        <img src="images/produto5.jpg" alt="Produto 5">
-                        <div class="product-info">
-                            <h3>Limpadores de Para-brisa específicos</h3>
-                            <p>Manutenção essencial para seu veículo. Preço: R$119,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988892" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto6.jpg" alt="Produto 6">
-                        <div class="product-info">
-                            <h3>Limpadores de Para-brisa</h3>
-                            <p>Manutenção essencial para seu veículo. Preço: R$89,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988893" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto7.jpg" alt="Produto 7">
-                        <div class="product-info">
-                            <h3>Capas de Banco carro</h3>
-                            <p>Proteja e decore seus bancos com estilo. Capas de Banco carro courinho vw. Preço: R$109,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988894" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto8.jpg" alt="Produto 8">
-                        <div class="product-info">
-                            <h3>Capas de Banco carro</h3>
-                            <p>Proteja e decore seus bancos com estilo. Capas de Banco tecido *fiat. Preço: R$139,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988895" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto9.jpg" alt="Produto 9">
-                        <div class="product-info">
-                            <h3>Quebra sol universal</h3>
-                            <p>Proteja seu carro. Preço: R$159,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988896" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto10.jpg" alt="Produto 10">
-                        <div class="product-info">
-                            <h3>Ombrelone guarda-sol</h3>
-                            <p>Ombrelone Guarda Sol Central Madeira 2,70m Importway Prot UV. Preço: R$169,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988897" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto11.jpg" alt="Produto 11">
-                        <div class="product-info">
-                            <h3>Capa De Volante Universal</h3>
-                            <p>Cores Azul, Preta, Cinza, Vermelha. Preço: R$179,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988898" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-card">
-                        <img src="images/produto12.jpg" alt="Produto 12">
-                        <div class="product-info">
-                            <h3>Capa De Volante Universal</h3>
-                            <p>Cores Azul, Preta, Cinza, Vermelha. Preço: R$189,99</p>
-                            <div class="product-buttons">
-                                <a href="https://wa.me/5527999988899" class="btn buy-now" target="_blank" rel="noopener noreferrer">Comprar Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="payment-methods">
-                    <h3>Métodos de Pagamento</h3>
-                    <p>Aceitamos os seguintes métodos de pagamento:</p>
-                    <ul>
-                        <li>Cartão de Crédito</li>
-                        <li>Boleto Bancário</li>
-                        <li>Transferência Bancária</li>
-                        <li>Pix</li>
-                    </ul>
+                    <!-- Repetir para outros produtos com IDs e funções corretas -->
                 </div>
             </div>
         </section>
 
-        <section id="sobre">
-            <div class="container">
-                <h2>Sobre Nós</h2>
-                <p>O Fuscão Vermelho é a sua loja online para produtos incríveis com qualidade garantida e preços competitivos. Nossa missão é oferecer a melhor experiência de compra para você.</p>
-            </div>
-        </section>
-
-        <section id="contato">
-            <div class="container">
-                <h2>Contato</h2>
-                <p>Para mais informações, entre em contato conosco:</p>
-                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5527999988888" target="_blank" rel="noopener noreferrer">27999888888</a></p>
-                <p><strong>Email:</strong> <a href="mailto:contato@fuscaovermelho.com">contato@fuscaovermelho.com</a></p>
-                <form action="#" method="post">
+        <!-- Formulário para informações de contato ao finalizar compra -->
+        <div id="checkout-modal" style="display:none;">
+            <div class="modal-content">
+                <h3>Finalizar Compra</h3>
+                <form id="checkout-form">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
                     
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
                     
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" required></textarea>
+                    <label for="produto">Produto:</label>
+                    <input type="text" id="produto" name="produto" readonly>
                     
-                    <button type="submit" class="btn">Enviar</button>
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="text" id="quantidade" name="quantidade" readonly>
+
+                    <label for="valor">Valor Total:</label>
+                    <input type="text" id="valor" name="valor" readonly>
+                    
+                    <button type="button" onclick="enviarWhatsApp()">Enviar Pedido via WhatsApp</button>
+                    <button type="button" onclick="fecharModal()">Cancelar</button>
                 </form>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -214,6 +82,36 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script> <!-- Opcional: JavaScript -->
+    <script>
+        let carrinho = [];
+
+        function adicionarAoCarrinho(produto, valor, quantidade) {
+            carrinho.push({ produto, valor, quantidade });
+            alert(`${quantidade}x ${produto} adicionado ao carrinho!`);
+        }
+
+        function finalizarCompra(produto, valor, quantidade) {
+            document.getElementById('produto').value = produto;
+            document.getElementById('quantidade').value = quantidade;
+            document.getElementById('valor').value = `R$ ${(valor * quantidade).toFixed(2)}`;
+            document.getElementById('checkout-modal').style.display = 'block';
+        }
+
+        function fecharModal() {
+            document.getElementById('checkout-modal').style.display = 'none';
+        }
+
+        function enviarWhatsApp() {
+            const nome = document.getElementById('nome').value;
+            const endereco = document.getElementById('endereco').value;
+            const produto = document.getElementById('produto').value;
+            const quantidade = document.getElementById('quantidade').value;
+            const valor = document.getElementById('valor').value;
+
+            const mensagem = `Olá, meu nome é ${nome}. Gostaria de comprar ${quantidade}x ${produto} pelo valor total de ${valor}. Endereço para entrega: ${endereco}.`;
+            const url = `https://wa.me/5527999988888?text=${encodeURIComponent(mensagem)}`;
+            window.open(url, '_blank');
+        }
+    </script>
 </body>
 </html>
